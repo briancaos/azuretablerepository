@@ -45,7 +45,6 @@ In this class you specify the name of the table to store your "MyEntity". And yo
 
 ```csharp
 using Azure.Data.Tables;
-using WasteNotifications.Foundation;
 
 namespace MyCode
 {
@@ -142,7 +141,7 @@ while (retryCount < maxRetries)
 
 ## Create, Update, or Upsert many entities
 
-In these methods, you don't need to worry about the insert limits of Azure Tables, the class will chunk your array for you
+In these methods, you don't need to worry about the insert limits of Azure Tables, the class will chunk your array for you.
 
 ```csharp
 List<MyEntity> entityList = new List<MyEntity>();
