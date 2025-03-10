@@ -50,7 +50,7 @@ namespace MyCode
 {
     public class MyRepository : AzureTableBaseRepository<MyEntity>
     {
-        public SmsBatchesRepository(TableServiceClient tableServiceClient) : base("MyTable", tableServiceClient)
+        public MyRepository(TableServiceClient tableServiceClient) : base("MyTable", tableServiceClient)
         {
         }
     }
