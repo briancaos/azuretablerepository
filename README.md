@@ -16,19 +16,19 @@ This class is the contents of your table. This is an example class:
   public class MyEntity : ITableEntity
   {
     /// <summary>
-    /// Mandatory field
+    /// Mandatory field (partition id)
     /// </summary>
     public string? PartitionKey { get; set; }
     /// <summary>
-    /// Mandatory field
+    /// Mandatory field (row id)
     /// </summary>
     public string? RowKey { get; set; }
     /// <summary>
-    /// Mandatory field
+    /// Mandatory field (last modified)
     /// </summary>
     public DateTimeOffset? Timestamp { get; set; } = default!;
     /// <summary>
-    /// Mandatory field
+    /// Mandatory field (unique id)
     /// </summary>
     public ETag ETag { get; set; } = default!;
 
